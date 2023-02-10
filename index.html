@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Unbounded:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/eocjs-newsticker.css" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/6fac2730d4.js"></script>
+  </head>
+  <body>
+    <section class="ticker">
+      <div id="energie">ENERGIE</div>
+    </section>
+    <section class="hero position-relative d-flex align-items-center" id="hero">
+      <div class="container align-items-center">
+        <div class="row">
+          <div class="col-md-6 text-white">
+            <h3 class="hero-title">
+              Besparen op uw vaste lasten? <br />
+              Wij zijn hier om te helpen!
+            </h3>
+            <p class="hero-text">
+              Wij zoeken speciaal voor particulieren, startende- en MKB ondernemers naar de laagste prijzen en hoogste kortingen. Dit doen wij op het gebied van energie, telecom en
+              verduurzaming.
+            </p>
+            <p class="hero-text">Wilt u weten wat uw mogelijkheden zijn?</p>
+            <div class="row cities hide-mobile">
+              <h5 class="mb-4 mt-3">WIJ ZIJN ACTIEF IN HEEL NEDERLAND</h5>
+              <div class="col-md-3">
+                <ul>
+                  <li>Groningen</li>
+                  <li>Friesland</li>
+                  <li>Drenthe</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul>
+                  <li>Overijssel</li>
+                  <li>Flevoland</li>
+                  <li>Gelderland</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul>
+                  <li>Utrecht</li>
+                  <li>Noord Holland</li>
+                  <li>Zuid Holland</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul>
+                  <li>Zeeland</li>
+                  <li>Noord Brabant</li>
+                  <li>Limburg</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="form-card" class="card p-3 animate__animated animate__fadeIn">
+              <form action="" method="post" id="registration">
+                <nav class="d-none">
+                  <div class="nav nav-pills nav-fill" id="nav-tab" role="tablist">
+                    <a class="nav-link active" id="step1-tab" data-bs-toggle="tab" href="#step1">Step 1</a>
+                    <a class="nav-link" id="step2-tab" data-bs-toggle="tab" href="#step2">Step 2</a>
+                    <a class="nav-link" id="step3-tab" data-bs-toggle="tab" href="#step3">Step 3</a>
+                  </div>
+                </nav>
+                <div class="tab-content py-4">
+                  <div class="tab-pane fade show active" id="step1">
+                    <h4>Hoe kunnen wij jou bereiken?<br / > Om deel te nemen aan de winactie hebben wij de onderstaande gegevens nodig:</h4>
+                    <div class="button-wrap">
+                      <div class="form-check form-check-inline">
+                        <input class="hidden radio-label form-check-input" id="yes-button" type="radio" name="accept-offers" required />
+                        <label class="button-label form-check-label" for="yes-button"><h1>Ja</h1></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="hidden radio-label form-check-input" id="no-button" type="radio" name="accept-offers" required />
+                        <label class="button-label form-check-label" for="no-button"><h1>Nee</h1></label>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col text-center">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="gender" id="man" value="man" required />
+                          <label class="form-check-label" for="man">Man</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="gender" id="Vrouw" value="Vrouw" required />
+                          <label class="form-check-label" for="inlineRadio2">Vrouw</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-2"><input type="text" name="voornaam" class="form-control" id="voornaam" placeholder="Voornaam" required /></div>
+                      <div class="col-md-6 mb-2"><input type="text" name="achternaam" class="form-control" id="achternaam" placeholder="Achternaam" required /></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mb-2"><input type="email" name="email" class="form-control" id="email" placeholder="Email" required /></div>
+                      <div class="col-md-6 mb-2"><input type="tel" name="telfoon" class="form-control" id="telfoon" placeholder="Telfoon" required /></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mb-2"><input type="text" name="adres" class="form-control" id="adres" placeholder="Adres" required /></div>
+                      <div class="col-md-6 mb-2"><input type="text" name="postcode" class="form-control" id="postcode" placeholder="Postcode" required /></div>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-md-12"><input type="text" name="plaats" class="form-control" id="plaats" placeholder="Plaats" required /></div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label>Geboortedatum</label>
+                      <input type="hidden" id="birthdatePicker" />
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                      <label class="form-check-label" for="exampleCheck1"
+                        ><small>
+                          Ja, ik ga ermee akkoord eenmalig telefonisch benaderd te worden door Particulier Garant. Een deskundige medewerker helpt mij bij het kiezen van een nieuw
+                          passend energie contract. Deze toestemming kan op ieder ogenblik worden ingetrokken.
+                        </small></label
+                      >
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="step2">
+                    <h4>Hoe kunnen wij jou bereiken?<br / > Om deel te nemen aan de winactie hebben wij de onderstaande gegevens nodig:</h4>
+                    <div class="mb-4">
+                      <label for="selectone">Bent u?</label>
+                      <select id="selectone" name="selectone" class="form-select" required>
+                        <option disabled selected>Please select</option>
+                        <option value="Eigenaar van eengezinswoning">Eigenaar van eengezinswoning</option>
+                        <option value="Eigenaar 2-onder-1 kap">Eigenaar 2-onder-1 kap</option>
+                        <option value="Eigenaar vrijstaande woning">Eigenaar vrijstaande woning</option>
+                        <option value="Eigenaar van een flat/appartement">Eigenaar van een flat/appartement</option>
+                        <option value="Huurder">Huurder</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-2">
+                      <label for="selecttwo">Wat is uw huidige energieleverancier? </label>
+                      <select id="selecttwo" name="selecttwo" class="form-select" required>
+                        <option disabled selected>Please select</option>
+                        <option value="Essent">Essent</option>
+                        <option value="Eneco">Eneco</option>
+                        <option value="Nuon/Vattenval">Nuon/Vattenval</option>
+                        <option value="NLE/Budget energie">NLE/Budget energie</option>
+                        <option value="Greenchoice ">Greenchoice</option>
+                        <option value="Oxxio">Oxxio</option>
+                        <option value="Qurrent">Qurrent</option>
+                        <option value="United consumers">United consumers</option>
+                        <option value="DGB">DGB</option>
+                        <option value=" Clear Energy">Clear Energy</option>
+                        <option value="Engie">Engie</option>
+                        <option value=" Energie direct">Energie direct</option>
+                        <option value="Overig">Overig</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="step3">
+                    <h4>Question?</h4>
+                    <div class="choices"></div>
+                  </div>
+                </div>
+                <div class="row justify-content-between">
+                  <div class="col-12"><button type="button" class="btn btn-secondary d-none" data-enchanter="previous">Previous</button></div>
+                  <div class="col-12">
+                    <button type="button" class="btn btn-primary col-12" data-enchanter="next">Volgende</button>
+                    <button type="submit" class="btn btn-primary col-12" data-enchanter="finish">Versturen</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 mt-4 mb-4">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iste aut animi quam labore, deleniti numquam suscipit. Molestiae debitis sunt quasi non tempore unde
+              nobis perferendis rerum odio quo, ducimus exercitationem quisquam id, maxime mollitia, excepturi molestias provident omnis repellat.
+            </p>
+          </div>
+          <hr />
+          <div class="col-12">
+            <div class="row cities show-mobile">
+              <h5 class="mb-4 mt-3">WIJ ZIJN ACTIEF IN HEEL NEDERLAND</h5>
+              <div class="col-3 col-xs-6">
+                <ul>
+                  <li>Groningen</li>
+                  <li>Friesland</li>
+                  <li>Drenthe</li>
+                </ul>
+              </div>
+              <div class="col-3 col-xs-6">
+                <ul>
+                  <li>Overijssel</li>
+                  <li>Flevoland</li>
+                  <li>Gelderland</li>
+                </ul>
+              </div>
+              <div class="col-3 col-xs-6">
+                <ul>
+                  <li>Utrecht</li>
+                  <li>Noord Holland</li>
+                  <li>Zuid Holland</li>
+                </ul>
+              </div>
+              <div class="col-3 col-xs-6">
+                <ul>
+                  <li>Zeeland</li>
+                  <li>Noord Brabant</li>
+                  <li>Limburg</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <p>© Social Hub 2021 – Bovenstaande producten en/of merken zijn niet geassocieerd met deze winactie.</p>
+            <p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#algemenevoorwaarden">Algemene voorwaarden</a> |
+              <a href="#" data-bs-toggle="modal" data-bs-target="#privacy">Privacy & Cookies</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/eocjs-newsticker.js"></script>
+    <script src="js/enchanter.js"></script>
+    <script src="js/jquery.date-dropdowns.js"></script>
+    <script>
+      $("#energie").eocjsNewsticker({
+        speed: 20,
+        divider: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        interval: 30,
+      });
+    </script>
+    <script>
+      var registrationForm = $("#registration");
+      var formValidate = registrationForm.validate({
+        errorClass: "is-invalid",
+        errorPlacement: () => false,
+      });
+
+      const wizard = new Enchanter(
+        "registration",
+        {},
+        {
+          onNext: () => {
+            if (!registrationForm.valid()) {
+              formValidate.focusInvalid();
+              return false;
+            }
+          },
+          onFinish: () => {
+            registrationForm.submit(function (e) {
+              e.preventDefault();
+              console.log("done");
+            });
+          },
+        }
+      );
+    </script>
+    <script>
+      $("#birthdatePicker").dateDropdowns({
+        submitFieldName: "birthdate",
+        wrapperClass: "date-dropdowns",
+        minAge: 18,
+        dropdownClass: "form-select",
+        required: true,
+        dayLabel: "Dag",
+        monthLabel: "Maand",
+        yearLabel: "Jaar",
+        monthLongValues: ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"],
+        daySuffixes: false,
+        monthSuffixes: true,
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#questionButton").click(function () {
+          $(this).find("i").toggleClass("fa-refresh").toggleClass("fa-check");
+        });
+      });
+    </script>
+  </body>
+</html>
+
+<div class="modal fade" id="privacy" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="privacyModalLabel">Privacy & Cookies</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">...</div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="algemenevoorwaarden" tabindex="-1" aria-labelledby="algemenevoorwaardenModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="algemenevoorwaardenModalLabel">Algemene voorwaarden</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">...</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,283 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Unbounded", cursive;
+}
+h4 {
+  padding-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 2px dotted #ccc;
+  margin-bottom: 20px;
+}
+.hero {
+  background-color: transparent;
+  background-image: linear-gradient(0deg, #493d9f 0%, #f47433 100%);
+  padding: 90px 0 0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.car {
+  animation: all 1s;
+}
+.hero .overlay {
+  background-image: url("../img/hero.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  mix-blend-mode: color-dodge;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+}
+.ticker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  z-index: 999;
+}
+.btn-primary,
+.btn,
+.btn-primary:hover,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  font-family: "Unbounded", cursive;
+}
+.hero .row {
+  position: relative;
+  z-index: 99;
+}
+.hero .hero-title {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 50px;
+}
+.hero .hero-text {
+  font-size: 20px;
+  font-weight: 400;
+}
+.eocjs-newsticker {
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-family: "Unbounded", cursive;
+}
+footer {
+  background-color: #1e2346;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px;
+}
+footer p {
+  margin-bottom: 0;
+}
+footer a {
+  color: #ee7e4c;
+  text-decoration: none;
+}
+.question {
+  display: none;
+}
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.button li {
+  border-radius: 4px;
+  background-color: #f2bd1d;
+  text-align: center;
+  line-height: 2em;
+  padding: 0.5em;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.button li:hover {
+  color: #f2bd1d;
+  background-color: #1e2346;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes shadow-pulse-big {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
+  }
+}
+
+.btn-pulse {
+  animation: shadow-pulse 1.5s infinite;
+}
+small {
+  font-size: 13px;
+  display: block;
+}
+
+.form-control:focus {
+  border-color: #f28246;
+  box-shadow: none;
+  border-width: 1px;
+}
+.card {
+  background-color: #f1f3f5;
+}
+.date-dropdowns {
+  display: flex;
+  gap: 5px;
+}
+ol,
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+.cities {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  margin-right: 50px;
+}
+
+.cities ul li {
+  font-size: 14px;
+}
+.checkbox-custom,
+.radio-custom {
+  opacity: 0;
+  position: absolute;
+}
+
+.button-wrap {
+  position: relative;
+  text-align: center;
+  top: 50%;
+}
+
+.button-label {
+  display: inline-block;
+  padding: 1em 2em;
+  margin: 0.5em;
+  cursor: pointer;
+  color: #292929;
+  border-radius: 0.25em;
+  background: #efefef;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
+  transition: 0.3s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.button-label h1 {
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+}
+.button-label:hover {
+  background: #d6d6d6;
+  color: #101010;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.32);
+}
+.button-label:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0px -1px 0 rgba(0, 0, 0, 0.22);
+}
+@media (max-width: 40em) {
+  .button-label {
+    padding: 0em 1em 3px;
+    margin: 0.25em;
+  }
+}
+
+#yes-button:checked + .button-label {
+  background: #2ecc71;
+  color: #efefef;
+}
+#yes-button:checked + .button-label:hover {
+  background: #29b765;
+  color: #e2e2e2;
+}
+
+#no-button:checked + .button-label {
+  background: #d91e18;
+  color: #efefef;
+}
+#no-button:checked + .button-label:hover {
+  background: #c21b15;
+  color: #e2e2e2;
+}
+
+#maybe-button:checked + .button-label {
+  background: #4183d7;
+  color: #efefef;
+}
+#maybe-button:checked + .button-label:hover {
+  background: #2c75d2;
+  color: #e2e2e2;
+}
+
+.hidden {
+  display: none;
+}
+@media only screen and (max-width: 720px) {
+  .hide-mobile {
+    display: none;
+  }
+  .cities {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    margin-right: 0;
+  }
+  .ticker {
+    position: initial;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    z-index: 999;
+    background: #3d3d3d;
+  }
+  .hero {
+    padding: 45px 0 30px;
+    min-height: auto;
+  }
+  .hero .hero-title,
+  .hero .hero-text {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 720px) {
+  .show-mobile {
+    display: none;
+  }
+}
